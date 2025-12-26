@@ -7,7 +7,7 @@
      $gmesg=$_POST["gmesg"];
        $filename="gbooks.txt";
        $fp = fopen($filename,"a+"); //append 
-       fputs($fp,"ข้อความ : $gmesg <br> \n");
+       fputs($fp,"ข้อความ : $gmesg <br>"); //\n effect php
        fputs($fp,"ชื่อ: $gname<br> \n");
        fclose($fp);
        $lines = file($filename);
